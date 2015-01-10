@@ -17,7 +17,7 @@ public class Conexao {
 	private Conexao() {
 		try {
 			Class.forName("com.mysql.jdbc.Driver");
-			connection = DriverManager.getConnection("jdbc:mysql://localhost/cepisa", "root", "");
+			connection = DriverManager.getConnection("jdbc:mysql://localhost/oi", "root", "");
 		} catch (Exception e) {
 			System.out.println("Nao foi possivel conectar ao banco!");
 		}
